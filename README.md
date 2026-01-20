@@ -1,28 +1,35 @@
 # Sampling-repo
 Sampling Assignment Submission - Aditvir Rinwa - 102317150
 
-## Objective
-The objective of this assignment is to study how different sampling techniques affect the performance of machine learning models when working with an imbalanced dataset.
+## Methodology
 
-## Dataset
-The dataset contains credit card transaction data with a highly imbalanced target variable, where fraudulent transactions are very rare.
+The given dataset is highly imbalanced, where fraudulent transactions are very few compared to normal transactions.
+To handle this issue, the dataset was first balanced using SMOTE so that both classes have equal representation.
 
-## Sampling Techniques Used
-- Random Under Sampling
-- Random Over Sampling
-- SMOTE
-- NearMiss
-- SMOTE with Tomek Links
+After balancing, five different samples were created from the dataset.
+Five sampling techniques were then applied:
+Random Undersampling, Random Oversampling, SMOTE, NearMiss, and SMOTE with Tomek Links.
 
-## Models Used
-- Logistic Regression
-- Decision Tree
-- Random Forest
-- KNN
-- SVM
+For each sampling technique, five machine learning models were trained:
+Logistic Regression, Decision Tree, Random Forest, KNN, and SVM.
+The dataset was split into training and testing sets, and accuracy was calculated for comparison.
+
+## Result Table
+
+The result table shows the accuracy of each machine learning model for every sampling technique.
+It can be observed that different models respond differently to different sampling methods.
+Some models perform better with undersampling, while others benefit from oversampling or hybrid methods.
+
+## Result Graph
+
+A bar graph is used to visually compare the accuracy values obtained from different sampling techniques.
+The graph helps in understanding how the performance of models varies when the sampling strategy is changed.
 
 ## Conclusion
-The results show that the performance of a model depends on the sampling technique used. Therefore, selecting an appropriate sampling method is important when dealing with imbalanced datasets.
+
+This experiment shows that there is no single best sampling technique for all models.
+The choice of sampling method should depend on the machine learning model and the nature of the dataset.
+This assignment helped in understanding the importance of sampling techniques when working with imbalanced data.
 
 ## Author
 Aditvir Rinwa
